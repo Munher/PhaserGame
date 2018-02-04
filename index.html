@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cañón VS Zombies</title>
+        <link rel="stylesheet" type="text/css" href="css/indexcss.css" />
+    </head>
+    <body>
+	<form id="formulario" method="POST" action="html.html">
+        <div id="text">
+            <h3>Puesto de cañonero</h3>
+            <p>Si tiene valor, rellene el siguiente formulario por el cual acepta exponerse a la situación de defender la casa del presidente de esos zombies que han invadido la ciudad. Nuestra única arma, es un antiguo cañón. No nos hacemos responsables de su valentía o insensatez.</p>
+        </div><br/>
+        <div id="info">
+            <label for="nombre">Nombre:
+                <input type="text" id="nombre" name="nombre" pattern="[A-Za-z ]{0,100}" required/>
+            </label><br/><br />
+            <label for="apellidos">Apellidos:
+                <input type="text" id="apellidos" name="apellidos" pattern="[A-Za-z ]{0,100}" required/>
+            </label><br/><br />
+            <label for="edad">Edad:
+                <input type="number" min="18" max="150" id="edad" name="edad" required/>
+            </label><br/><br />
+            <label for="medallas">Número de medallas:
+                <input type="number" min="1" id="medallas" name="medallas" required/>
+            </label><br/><br />
+            <label>Seleccione su avatar:</label><br /><br />
+            <img src="images/stan.png" class="noSelected" value="Stan" onclick="classChange()">
+            <img src="images/bart.png" class="noSelected" value="Bart" onclick="classChange()">
+            <img src="images/peter.png" class="noSelected" value="Peter" onclick="classChange()">
+            <p>Seleccione ciudad donde combatir:</p>
+            <select id="ciudades" required>
+                <option value="Montreal" selected="true">Montreal</option>
+                <option value="New York">New York</option>
+                <option value="Pekín">Pekín</option>
+            </select><br /><br />
+            <fieldset>
+                <p>¿Ha manejado alguna vez un cañón?</p>
+                <label>Sí</label><input type="radio" name="experiencia" value="Si" required>
+                <label>No</label><input type="radio" name="experiencia" value="No">
+            </fieldset><br/>
+            <input type="submit" id="boton" value="¡Vamos a ello!" onclick="datosJugador()"/><br /><br/>
+            <a href="documentación.html">¿No sabes cómo jugar? Clica aquí para leer documentación</a><br/><br/>
+        </div>
+    </form>
+    <script src="jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="javascript/javascriptForm.js"></script>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 110%;
+}
+
+body {
+    background-image: url("camuflaje.jpg");
+    opacity:1;
+}
+
+#formulario {
+    border:2px solid greenyellow;
+    border-radius:5px;
+    background-color: teal;
+    color:white;
+    height:30%;
+    margin-left:20%;
+    margin-right:20%;
+    margin-top:5%;
+}
+
+#text {
+    border-bottom:3px solid greenyellow;
+    text-align:center;
+}
+
+#info {
+    text-align:center;
+}
+
+img {
+    cursor:pointer;
+}
+
+img:hover {
+    width:10em;
+    height:10em;
+}
+
+.selected {
+    border:2px solid greenyellow;
+}
+
+input[type=number] {
+    border:5px solid grey;
+}
+
+input[type=number]:invalid {
+   background-color: tomato;
+}
+
+input[type=text] {
+    border:5px solid grey;
+}
+
+input[type=text]:invalid {
+    background-color:tomato;
+}
+
+input[type=submit] {
+    width:30%;
+    padding:0.5em;
+    border:none;
+}
+
+input[type=submit]:hover {
+    width:95%;
+    font-size: 2em;
+    color:grey;
+    background-color: tomato
+}
+
+#documentacion {
+    border:2px solid greenyellow;
+    border-radius:5px;
+    background-color: lightgray;
+    padding:1em;
+}
+
+@media (max-width:750px) {
+    img {
+        width:4em;
+        height:4em;
+    }
+    input {
+        width:50%;
+    } 
+    input[type=submit] {
+        width:90%;
+        padding:0.5em;
+        border:none;
+    }
+}
